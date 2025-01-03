@@ -12,7 +12,7 @@ app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 // Manejar las peticiones GET en la ruta /api
 app.get("/api", (req, res) => {
-    res.json({ message: "Hola desde el servidor!" });
+    res.json({ message: "Hola desde el servidor, Daniel!" });
 });
 
 // Todas las peticiones GET que no hayamos manejado en las líneas anteriores retornarán nuestro App React
